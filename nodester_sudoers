@@ -1,0 +1,4 @@
+nodester ALL = NOPASSWD: /var/nodester/nodester/bin/proxy_start.sh *
+nodester ALL = NOPASSWD: /var/nodester/nodester/bin/proxy_stop.sh
+nodester ALL = NOPASSWD: /var/nodester/nodester/bin/app_start.sh *
+nodester ALL = NOPASSWD: /var/nodester/nodester/bin/app_stop.sh *

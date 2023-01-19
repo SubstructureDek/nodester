@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  nodester:
+    image: nodester:latest
+    ports:
+      - "4001:4001"
+
+  couchdb:
+    image: couchdb:3.3
+    environment:
+      - COUCHDB_USER=nodester
+      - COUCHDB_PASSWORD=password
+    ports:
+      - "5984:5984"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
